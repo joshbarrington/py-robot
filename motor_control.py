@@ -2,6 +2,7 @@ __author__ = 'joshuabarrington'
 
 import explorerhat
 
+
 class Motors:
     def drive(self, key):
         if key == "w":
