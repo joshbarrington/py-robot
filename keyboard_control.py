@@ -19,3 +19,5 @@ class KeyboardInput:
             return "s"
         elif key[pygame.K_d]:
             return "d"
+
+print(KeyboardInput().read_command())
