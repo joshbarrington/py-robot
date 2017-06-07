@@ -4,6 +4,8 @@ from motor_control import Motors
 import pygame
 from pygame.locals import *
 
+pygame.init()
+
 
 class Robot:
     def __init__(self, controller):
