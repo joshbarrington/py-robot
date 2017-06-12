@@ -1,8 +1,6 @@
 __author__ = 'joshuabarrington'
 
 from motor_control import Motors
-import pygame
-from pygame.locals import *
 
 pygame.init()
 
@@ -13,6 +11,9 @@ class Robot:
         self.motors = Motors()
 
     def control_loop(self):
+
+	pygame.init()
+
         if pygame.key.get_pressed():
             key = self.controller.read_command()
             self.motors.drive(key)
