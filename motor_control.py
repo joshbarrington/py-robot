@@ -4,20 +4,29 @@ import explorerhat
 
 
 class Motors:
-    def drive(self, key):
-        if key == "w":
+
+    # Axis = left_analog_y
+    def drive(self, axis):
+        if axis < -0.7:   # Forwards
             explorerhat.motor.one.forwards()
             explorerhat.motor.two.forwards()
-        elif key == "s":
+        elif axis > 0.7:  # Backwards
             explorerhat.motor.one.backwards()
             explorerhat.motor.two.backwards()
-        elif key == "a":
-            explorerhat.motor.one.forwards()
+
+    # Axis = right_analog_x
+    def turn(self, axis):
+	if axis > 0.7:	  # Right
+	    explorerhat.motor.one.backwards()
+	    explorerhat.motor.two.forwards()
+	elif axis < -0.7: # Left
+	    explorerhat.motor.one.forwards()
             explorerhat.motor.two.backwards()
-        elif key == "d":
-            explorerhat.motor.one.backwards()
-            explorerhat.motor.two.forwards()
 
     def stop(self):
-        explorerhat.motor.one.stop()
-        explorerhat.motor.two.stop()
+	explorerhat.motor.one.stop()
+	explorerhat.motor.two.stop()
+ 
+
+
+
