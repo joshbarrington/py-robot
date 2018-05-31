@@ -1,7 +1,8 @@
-__author__ = 'joshuabarrington'
+__author__ = "joshuabarrington"
+
+from robot import Robot
 
 from keyboard_control import KeyboardInput
-from robot import Robot
 
 controller = KeyboardInput()
 robot = Robot(controller)

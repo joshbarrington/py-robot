@@ -1,4 +1,4 @@
-__author__ = 'joshuabarrington'
+__author__ = "joshuabarrington"
 
 
 class KeyboardInput:

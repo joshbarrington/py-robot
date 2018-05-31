@@ -1,7 +1,8 @@
-__author__ = 'joshuabarrington'
+__author__ = "joshuabarrington"
 
 import curses
 import os
+
 from motor_control import Motors
 
 

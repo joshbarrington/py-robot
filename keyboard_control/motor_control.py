@@ -1,4 +1,4 @@
-__author__ = 'joshuabarrington'
+__author__ = "joshuabarrington"
 
 import explorerhat
 
@@ -21,4 +21,3 @@ class Motors:
     def stop(self):
         explorerhat.motor.one.stop()
         explorerhat.motor.two.stop()
-

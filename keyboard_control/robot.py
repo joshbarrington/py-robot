@@ -1,4 +1,4 @@
-__author__ = 'joshuabarrington'
+__author__ = "joshuabarrington"
 
 from motor_control import Motors
 

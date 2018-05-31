@@ -1,5 +1,10 @@
-import pygame, sys, time ,os
+import os
+import sys
+import time
+
+import pygame
 from pygame.locals import *
+
 
 #PS4 controller functions and variables
 class ps4:
